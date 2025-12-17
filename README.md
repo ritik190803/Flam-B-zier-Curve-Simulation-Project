@@ -3,7 +3,16 @@ Where math meets art in the browser.
 
 This project is a visual playground designed to demystify cubic Bézier curves. Instead of dry textbook formulas, it treats the curve like a living, breathing object—a springy rope that reacts to physics and user input. It's a simple yet powerful demonstration of how core mathematical principles can create organic, fluid motion on the web.
 
-🔗 Live Demo (Replace with your actual link)
+🔗 Try It Live
+Choose your experience:
+
+💻 Desktop / Browser Version
+
+Best for: Big screens, inspecting the code, and mouse interaction.
+
+📱 Mobile Version with Gyroscope
+
+Best for: Immersion. Syncs with your phone's sensors for real-time gravity effects.
 
 🚀 How It Works
 At its core, this simulation visualizes a Cubic Bézier Curve. This curve is defined by four points:
@@ -19,7 +28,22 @@ The project runs on two distinct systems working in harmony:
 
 ⚛️ The Physics Engine (physics.js): This is what makes it feel alive. Instead of moving linearly, the control points are treated like physical objects attached to springs. They have mass, velocity, and damping (friction). When they move, they accelerate and settle smoothly rather than snapping instantly into place.
 
-🎮 Controls & Modes
+🎮 How to Play (Interaction)
+The simulation adapts to your device to provide the most intuitive control scheme possible.
+
+💻 On Laptop/Desktop
+Input: Mouse Position The curve follows your cursor. Think of your mouse as a "wind" source. As you sweep your mouse across the canvas, the invisible control points chase your cursor, causing the curve to sway, whip, and settle just like a slack rope hanging in the wind.
+
+📱 On Mobile
+Input: Gyroscopic Sensors (Tilt) On a mobile device, the curve reacts to real-world gravity. By syncing with your phone's gyroscope, the simulation detects how you are holding your device.
+
+Tilt Left/Right: The curve swings to match the direction of "down."
+
+Shake: The physics engine responds to sudden movements, making the curve bounce.
+
+Note: iOS users may need to tap "Enable Sensors" to grant permission for motion data.
+
+🎛️ Controls & Modes
 The simulation features two modes to explore the curve in different ways. You can toggle these from the sidebar.
 
 1. Auto Mode (Default)
@@ -78,4 +102,5 @@ Open it up Simply open index.html in your browser. No build steps or servers req
 
 📝 License
 This project is open source. Feel free to use the code for learning, art, or your own projects!
+
 
