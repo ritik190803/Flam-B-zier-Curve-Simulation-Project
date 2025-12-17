@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bezier Curve Simulation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #000;
+            font-family: monospace;
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 350px;
+            height: 100%;
+            background: rgba(20, 20, 20, 0.9);
+            border-right: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #fff;
+            z-index: 10;
+        }
+
+        h1 {
+            margin: 0 0 30px 0;
+            font-size: 28px;
+            color: #00ffff;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        #info-panel {
+            flex: 1;
+        }
+
+        canvas {
+            display: block;
+            cursor: crosshair;
+        }
+
+        /* Utility classes for info panel content */
+        .section { margin-bottom: 30px; }
+        .section-title { color: #ff00ff; font-weight: bold; margin-bottom: 10px; font-size: 18px; }
+        .grid-row { display: grid; grid-template-columns: 60px 1fr; gap: 10px; font-size: 16px; line-height: 1.5; }
+        .grid-row-cursor { display: grid; grid-template-columns: 80px 1fr; gap: 10px; font-size: 16px; line-height: 1.5; }
+        .label { opacity: 0.7; }
+        .cursor-title { color: #ffff00; font-weight: bold; margin-bottom: 10px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h1>Bezier Curve Simulation</h1>
+        <div id="info-panel"></div>
+
+        <div class="section" style="margin-top: 20px; border-top: 1px solid #333; padding-top: 20px;">
+            <div class="section-title">Curve Controls</div>
+            <div class="grid-row" style="margin-bottom: 10px;">
+                <label class="label" for="control-mode">Mode</label>
+                <select id="control-mode" style="width: 100%; background: #333; color: #fff; border: 1px solid #555; padding: 5px;">
+                    <option value="auto" selected>Auto</option>
+                    <option value="manual">Manual</option>
+                </select>
+            </div>
+            <div class="grid-row" style="margin-bottom: 10px;">
+                <label class="label" for="line-length">Line Length</label>
+                <input type="range" id="line-length" min="100" max="1000" value="200">
+            </div>
+            <div class="grid-row" style="margin-bottom: 10px;">
+                <label class="label" for="tangent-length">Tangent Length</label>
+                <input type="range" id="tangent-length" min="10" max="200" value="100">
+            </div>
+        </div>
+
+        <button id="enable-sensors" style="display: none; margin-top: 20px; padding: 10px; background: #00ffff; border: none; cursor: pointer; font-weight: bold;">Enable Sensors (iOS)</button>
+    </div>
+    <canvas id="canvas"></canvas>
+
+    <script src="math.js"></script>
+    <script src="physics.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
