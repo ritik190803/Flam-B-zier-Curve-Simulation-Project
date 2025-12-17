@@ -6,11 +6,11 @@ This project is a visual playground designed to demystify cubic Bézier curves. 
 🔗 Try It Live
 Choose your experience:
 
-💻 Desktop / Browser Version
+💻 Desktop / Browser Version (https://694276e300182e4697456502--brilliant-pika-2120c4.netlify.app/)
 
 Best for: Big screens, inspecting the code, and mouse interaction.
 
-📱 Mobile Version with Gyroscope
+📱 Mobile Version with Gyroscope (https://dynamic-praline-4b3aac.netlify.app/)
 
 Best for: Immersion. Syncs with your phone's sensors for real-time gravity effects.
 
@@ -102,5 +102,6 @@ Open it up Simply open index.html in your browser. No build steps or servers req
 
 📝 License
 This project is open source. Feel free to use the code for learning, art, or your own projects!
+
 
 
