@@ -73,8 +73,9 @@ Clone the repo
 
 Bash
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/ritik190803/Flam-B-zier-Curve-Simulation-Project.git
 Open it up Simply open index.html in your browser. No build steps or servers required!
 
 📝 License
 This project is open source. Feel free to use the code for learning, art, or your own projects!
+
